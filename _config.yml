@@ -1,0 +1,8 @@
+lang: pl
+color: light # can be dark, light or auto
+title: Github Pages Template for Readme
+logo: /assets/logo.png
+description: Minimal theme to convert your README.md to Github Pages site
+# show_downloads: true
+google_analytics:
+# theme: jekyll-template-for-readme
