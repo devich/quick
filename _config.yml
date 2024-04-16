@@ -1,8 +1,9 @@
-lang: pl
-color: light # can be dark, light or auto
+lang: en-US # e.g. uk, pl, en-US
+bg_color: dark # can be dark, light or auto
+# theme-color is main accent color and can be red, pink, fuchsia, purple, violet, indigo, blue, azure, cyan, jade, green,
+# lime, yellow, amber, pumpkin, orange, sand, grey, zinc, slate. See samples on https://picocss.com/docs/version-picker
+theme_color: azure
 title: Github Pages Template for Readme
-logo: /assets/logo.png
-description: Minimal theme to convert your README.md to Github Pages site
-# show_downloads: true
-google_analytics:
+description: Minimal theme to convert your README.md to the Github Pages site
+# google_analytics: NO SUPPORT YET
 # theme: jekyll-template-for-readme

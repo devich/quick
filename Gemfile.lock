@@ -1,0 +1,37 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
+    ffi (1.16.3-x64-mingw-ucrt)
+    http_parser.rb (0.8.0)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    kramdown (2.4.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    rexml (3.2.6)
+    wdm (0.1.1)
+    webrick (1.8.1)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  em-websocket (~> 0.5.3)
+  jekyll-watch (~> 2.2, >= 2.2.1)
+  kramdown-parser-gfm (~> 1.1)
+  wdm (>= 0.1.0)
+  webrick (~> 1.8, >= 1.8.1)
+
+BUNDLED WITH
+   2.5.9

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang='{{ site.lang | default: "en-US" }}' data-theme='{{ site.color | default: "auto" }}'>
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="{{ site.bg_color | default: "auto" }}">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Meta content -->
-    <meta name="theme-color" content="#fff" />
+    {% if site.bg_color == "dark" %}
+    <meta name="theme-color" content="#13171F" />
+    {% endif %}
+    <meta name="color-scheme" content="light dark" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta property="og:title" content="" />
@@ -17,7 +20,7 @@
 
     <title>{{ site.title }}</title>
     <!-- Favicon -->
-    <link
+    <!-- <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -29,7 +32,7 @@
       sizes="16x16"
       href="img/favicon-16x16.png"
     />
-    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="manifest" href="img/site.webmanifest" /> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +43,11 @@
     <!-- Pico.css from CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.jade.min.css"
+      {% if site.theme_color == "azure" %}
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+      {% else %}
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.{{ site.theme_color }}.min.css"
+      {% endif %}
     />
     <!-- Custom styles -->
     <style>
@@ -71,10 +78,9 @@
     <header></header>
     <!-- Main section -->
     <main>
-      <!-- MD to HTML Converter: https://codebeautify.org/markdown-to-html -->
-      <!-- Converted to HTML README.md starts from here -->
+      <!-- README.md starts from here -->
       {{ content }}
-      <!-- Converted to HTML README.md ends here -->
+      <!-- README.md ends here -->
     </main>
     <!-- Footer section -->
     <footer></footer>
