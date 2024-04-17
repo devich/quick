@@ -12,6 +12,12 @@ remote_theme: devich/jekyll-template-for-readme
 ---
 layout: index
 ---
-{% raw  %}{% include_relative README.md %}{% endraw %}
+<!-- {% raw %} -->
+{% include_relative README.md %}
+<!-- {% endraw %} -->
 ```
 - Enable GitHub Pages in the repository settings.
+
+```
+{{ "{% this " }}%}
+```
