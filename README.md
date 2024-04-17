@@ -32,7 +32,7 @@ Copy the contents of the `_config.yml` file from the [theme repository](https://
 The following options are available:
 - `lang:` sets the language of the site. E.g. `en-US`, `uk`, `pl`, `fr-CA` and so on. The default value is `en-US`.
 - `bg_color:` sets the background color of your website. Can be `dark`, `light` or `auto`. The default value is `auto`.
-- `theme_color:` sets the main accent color for buttons, links, etc. It can be `red`, `pink`, `fuchsia`, `purple`, `violet`, `indigo`, `blue`, `azure`, `cyan`, `jade`, `green`, `lime`, `yellow`, `amber`, `pumpkin`, `orange`, `sand`, `grey`, `zinc` or `slate`. See samples on the [Pico CSS website](https://picocss.com/docs/version-picker). The default value is `azure`.
+- `theme_color:` sets the main accent color for buttons, links, etc. It can be <code class="highlighter-rouge" style="color:#c52f21">red</code>, `pink`, `fuchsia`, `purple`, `violet`, `indigo`, `blue`, `azure`, `cyan`, `jade`, `green`, `lime`, `yellow`, `amber`, `pumpkin`, `orange`, `sand`, `grey`, `zinc` or `slate`. See samples on the [Pico CSS website](https://picocss.com/docs/version-picker). The default value is `azure`.
 - `title:` sets the title of the site. If not set, your repository name will be used.
 - `remote_theme:` is the only **required parameter**; without it, your site will not work. The value should always be `devich/readme-landing-page`.
 
