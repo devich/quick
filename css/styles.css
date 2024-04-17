@@ -1,0 +1,24 @@
+h1 {
+  font-size: 4rem;
+  font-family: "Roboto Slab", var(--pico-font-family);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  /* hyphens: auto; */
+}
+pre {
+  margin-top: calc(var(--pico-spacing) / 2);
+}
+.ignore {
+  display: none;
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

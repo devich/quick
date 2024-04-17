@@ -6,16 +6,18 @@ This Jekyll theme simply converts your README.md to the GitHub Pages site with [
 ## Quick Start
 
 **1.** Create `_config.yml` file in the root of your repository with the following contents:
-```
+```yaml
 remote_theme: devich/readme-landing-page
 ```
 
 **2.** Create `index.md` file in the root of your repository with the following contents:
-<pre><code>---
-layout: index
----
-&#123;% include_relative README.md %&#125;
-</code></pre>
+
+<div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">index</span>
+<span class="nn">---</span>
+
+<span class="nt">&#123;%</span> <span class="na">include_relative</span> <span class="s">README.md</span> <span class="nt">%&#125;</span>
+</code></pre></div>
 
 **3.** Enable GitHub Pages in the repository settings.
 
@@ -40,13 +42,13 @@ The following options are available:
 If you need a block in the README.md that should not be shown on the GitHub Pages site, you can format this block in HTML and assign `class="ignore"` to this block.
 
 <p class="ignore">
-    This paragraph <a>will not be displayed</a> on the site
-    because it has an <code>"ignore"</code> class:
+    This paragraph <a href="https://devich.github.io/readme-landing-page/">will not be displayed</a>
+    on the site because it has an <code>"ignore"</code> class.
 </p>
 
 ```html
 <p class="ignore">
-    This paragraph will not be displayed on the site
-    because it has an <code>"ignore"</code> class:
+    This paragraph <a href="https://devich.github.io/readme-landing-page/">will not be
+    displayed</a> on the site because it has an <code>"ignore"</code> class.
 </p>
 ```
