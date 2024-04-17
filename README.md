@@ -13,3 +13,4 @@ layout: index
 &#123;% include_relative README.md %&#125;
 </code></pre>
 3. Enable GitHub Pages in the repository settings.
+4. Test item.
