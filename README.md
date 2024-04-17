@@ -42,7 +42,7 @@ The following options are available:
 If you need a block in the README.md that should not be shown on the GitHub Pages site, you can format this block in HTML and assign `class="ignore"` to this block.
 
 <p class="ignore">
-    This paragraph <a href="https://devich.github.io/readme-landing-page/">will not be displayed</a>
+    This paragraph <a href="https://devich.github.io/readme-landing-page/#Ignoring">will not be displayed</a>
     on the site because it has an <code>"ignore"</code> class.
 </p>
 
