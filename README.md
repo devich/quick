@@ -7,11 +7,9 @@ This Jekyll theme simply converts your README.md to the GitHub Pages site with [
 <pre><code>remote_theme: devich/jekyll-template-for-readme
 </code></pre>
 2. Create `index.md` file in the root of your repository with the following contents:
-{:start="2"}
 <pre><code>---
 layout: index
 ---
 &#123;% include_relative README.md %&#125;
 </code></pre>
 3. Enable GitHub Pages in the repository settings.
-{:start="3"}
