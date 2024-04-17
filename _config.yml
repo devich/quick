@@ -5,5 +5,3 @@ bg_color: dark # can be dark, light or auto
 theme_color: azure
 title: Github Pages Template for Readme
 description: Minimal theme to convert your README.md to the Github Pages site
-# google_analytics: NO SUPPORT YET
-# theme: jekyll-template-for-readme
