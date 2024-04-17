@@ -35,16 +35,16 @@ The following options are available:
 - `remote_theme:` is the only **required parameter**; without it, your site will not work. The value should always be `devich/readme-landing-page`.
 
 
-## Ignoring
+### Ignoring
 
 If you need a block in the README.md that should not be shown on the GitHub Pages site, you can format this block in HTML and assign `class="ignore"` to this block.
 
 <p class="ignore">
-    This paragraph will not be displayed on the site
+    This paragraph <a>will not be displayed</a> on the site
     because it has an <code>"ignore"</code> class:
 </p>
 
-```
+```html
 <p class="ignore">
     This paragraph will not be displayed on the site
     because it has an <code>"ignore"</code> class:
