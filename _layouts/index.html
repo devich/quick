@@ -43,10 +43,10 @@
     <!-- Pico.css from CDN -->
     <link
       rel="stylesheet"
-      {% if site.theme_color == "azure" %}
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-      {% else %}
+      {% if site.theme_color and site.theme_color != "azure" %}
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.{{ site.theme_color }}.min.css"
+      {% else %}
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
       {% endif %}
     />
     <!-- Custom styles -->
