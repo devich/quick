@@ -9,13 +9,12 @@ remote_theme: devich/jekyll-template-for-readme
 ```
 - Create `index.md` file in the root of your repository with the following contents:
 
-<pre><code>
-This is pre code
+<pre><code>This is pre code
 </code></pre>
 
 
 
-    <pre><code>---
+<pre><code>---
 layout: index
 ---
 &#123;% include_relative README.md %&#125;
