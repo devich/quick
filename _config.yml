@@ -5,4 +5,4 @@ bg_color: dark # can be dark, light or auto
 theme_color: azure
 title: Github Pages Template for Readme
 description: Minimal theme to convert your README.md to the Github Pages site
-remote_theme: devich/jekyll-template-for-readme
+# remote_theme: devich/jekyll-template-for-readme
