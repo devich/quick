@@ -7,3 +7,14 @@ title: GitHub Pages Theme for Readme
 description: Minimal theme to convert your README.md to the GitHub Pages site
 keywords: github pages, github readme, github pages theme, jekyll
 remote_theme: devich/readme-landing-page
+
+# Defaults section
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-optional-front-matter
