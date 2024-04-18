@@ -1,3 +1,4 @@
+# Your site's settings
 lang: en-US # e.g. uk, pl, en-US
 bg_color: dark # can be dark, light or auto
 # theme-color is main accent color and can be red, pink, fuchsia, purple, violet, indigo, blue, azure, cyan, jade, green,
@@ -6,15 +7,14 @@ theme_color: azure
 title: GitHub Pages Theme for Readme
 description: Minimal theme to convert your README.md to the GitHub Pages site
 keywords: github pages, github readme, github pages theme, jekyll
-remote_theme: devich/readme-landing-page
 
-# Defaults section
+
+# Service section; you probably don't want to change anything here unless you know what you're doing
 defaults:
   -
     scope:
       path: ""
     values:
       layout: "default"
-
 plugins:
   - jekyll-optional-front-matter
