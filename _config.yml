@@ -4,9 +4,9 @@ bg_color: dark # can be dark, light or auto
 # theme-color is the main accent color and can be red, pink, fuchsia, purple, violet, indigo, blue, azure, cyan, jade, green,
 # lime, yellow, amber, pumpkin, orange, sand, grey, zinc, slate. See samples on https://picocss.com/docs/version-picker
 theme_color: azure
-title: GitHub Pages Theme for Readme
-description: Minimal theme to convert your README.md to the GitHub Pages site
-keywords: github pages, github readme, github pages theme, jekyll
+title: Quick
+description: Quick. The fastest and easiest way to make a GitHub Pages website for your project.
+keywords: github pages, github readme, github pages theme, jekyll theme, landing page
 
 # If you're using devich/quick as your GitHub Pages remote theme,
 # there's no need to copy the options listed below.
