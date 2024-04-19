@@ -60,5 +60,9 @@ If there’s a block in the `README.md` file that you don’t want to display on
 </p>
 ```
 
+
 ### More customization
-If you need to use your own CSS styles, simply create a file `assets\css\custom.css` in your repository and add your styles to it.
+
+If you need to use your own CSS styles, create a file `assets/css/custom.css` in your repository and add your styles to it.
+
+For a custom favicon, just place your file in `PNG` format at `assets/img/favicon.png`.
