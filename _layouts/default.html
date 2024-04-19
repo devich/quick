@@ -20,19 +20,8 @@
 
     <title>{{ site.title }}</title>
     <!-- Favicon -->
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/site.webmanifest" /> -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <!-- <link rel="manifest" href="img/site.webmanifest" /> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,10 +38,12 @@
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
       {% endif %}
     />
-    <!-- Custom styles -->
+    <!-- Base styles -->
     <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
     <!-- Code highlight styles -->
     <link rel="stylesheet" href="{{ "assets/css/base16.solarized.css" | relative_url }}">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
   </head>
 
   <body>

@@ -285,7 +285,7 @@ DEPENDENCIES
   jekyll-redirect-from (= 0.16.0)
   jekyll-relative-links (= 0.6.1)
   jekyll-remote-theme (= 0.4.3)
-  jekyll-sass-converter (= 1.5.2)
+  jekyll-sass-converter (>= 1.5.2)
   jekyll-seo-tag (= 2.8.0)
   jekyll-sitemap (= 1.4.0)
   jekyll-swiss (= 1.0.0)

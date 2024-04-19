@@ -59,3 +59,6 @@ If there’s a block in the `README.md` file that you don’t want to display on
     displayed</a> on the site because it has an <code>"ignore"</code> class.
 </p>
 ```
+
+### More customization
+If you need to use your own CSS styles, simply create a file `assets\css\custom.css` in your repository and add your styles to it.
