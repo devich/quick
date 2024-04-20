@@ -4,7 +4,7 @@
 <p class="ignore">Just see it yourself&thinsp;—&thinsp;<a href="https://devich.github.io/quick/">this page</a> is the same <code>README.md</code> file you’re reading, but with the Quick theme applied.</p>
 &nbsp;
 
-<img class="ignore" href="{{ "assets/img/favicon.png" | relative_url }}" alt="Quick preview">
+<img class="ignore" src="{{ "assets/img/favicon.png" | relative_url }}" alt="Quick preview">
 
 ## Quick start
 
