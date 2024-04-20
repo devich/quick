@@ -1,10 +1,12 @@
-# <span style="color: #ff201e">Quick.</span> The fastest and easiest way to make a GitHub Pages website for your project.
+# <span style="color: #ff201e">Quick.</span> The fastest and easiest way to&nbsp;make a&nbsp;GitHub Pages website for your project.
 #### This theme magically transforms your `README.md` into a GitHub Pages site, applying clean and visually appealing styles.
 
 <p class="ignore">Just see it yourself&thinsp;—&thinsp;<a href="https://devich.github.io/quick/">this page</a> is the same <code>README.md</code> file you’re reading, but with the Quick theme applied.</p>
 &nbsp;
 
-## Quick Start
+<img class="ignore" href="{{ "assets/img/favicon.png" | relative_url }}" alt="Quick preview">
+
+## Quick start
 
 1. Make sure a `README.md` file exists in the root directory of your repo, and GitHub Pages is enabled in your repository settings.
 
@@ -66,3 +68,5 @@ If there’s a block in the `README.md` file that you don’t want to display on
 If you need to use your own CSS styles, create a file `assets/css/custom.css` in your repository and add your styles to it.
 
 For a custom favicon, just place your file in `PNG` format at `assets/img/favicon.png`.
+
+For full control, clone this repository and modify the template as you need.
