@@ -7,7 +7,7 @@ theme_color: azure
 title: Quick
 description: Quick. The fastest and easiest way to make a GitHub Pages website for your project.
 keywords: github pages, github readme, github pages theme, jekyll theme, landing page
-gtag: ${{ vars.GTAG }} #Google Analytics tag (e.g. G-A1BCDEFGHI)
+gtag: G-X7HSHVZDZT #Google Analytics tag (e.g. G-A1BCDEFGHI)
 
 # If you're using devich/quick as your GitHub Pages remote theme,
 # there's no need to copy the options listed below.
