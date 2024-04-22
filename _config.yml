@@ -21,6 +21,3 @@ defaults:
       layout: "default"
 plugins:
   - jekyll-optional-front-matter
-sass:
-  style: compressed
-  sass_dir: _sass
