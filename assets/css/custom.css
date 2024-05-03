@@ -1,0 +1,4 @@
+html[data-theme="dark"] {
+  background: var(--pico-background-color);
+  background: linear-gradient(175deg, rgba(18,18,18,1) 0%, color-mix(in srgb, var(--pico-primary), transparent 90%) 7%, rgba(18,18,18,1) 27%, rgba(18,18,18,1) 86%, rgba(8,8,8,1) 100%);
+}

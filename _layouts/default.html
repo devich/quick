@@ -28,9 +28,9 @@
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
 
-    <title>{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,24 +42,25 @@
     <link
       rel="stylesheet"
       {% if site.theme_color and site.theme_color != "azure" %}
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.{{ site.theme_color }}.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.{{ site.theme_color }}.min.css"
       {% else %}
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
       {% endif %}
     />
     <!-- Base styles -->
-    <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
     <!-- Code highlight styles -->
-    <link rel="stylesheet" href="{{ "assets/css/base16.solarized.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/base16.solarized.css" | relative_url }}">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
+    {% assign custom_css = site.static_files | where: "path", "/assets/css/custom.css" | first %}
+    {% if custom_css %}<link rel="stylesheet" href="{{ custom_css.path | relative_url }}">{% endif %}
   </head>
 
   <body>
     <!-- Header section -->
     <header>&nbsp;</header>
     <!-- Main section -->
-    <main>
+    <main class="container">
       <!-- README.md starts from here -->
       {{ content }}
       <!-- README.md ends here -->

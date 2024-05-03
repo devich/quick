@@ -24,7 +24,7 @@ No problem! You’re not restricted to using `readme.md` as the index page of yo
 For instance, if you need a home page and an ‘About’ page, create files named `index.md` and `about.md`. Inside the `index.md` file, you can link to your ‘About’ page like this:
 
 ```md
-[About this project](about)
+[About this project](/about)
 ```
 
 
