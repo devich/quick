@@ -23,12 +23,9 @@
 ### Test Nav Dropdown — List only pages in folders (group by first folder)
 <nav>
   <ul>
-    <li><strong>Acme Corp</strong></li>
+    <li><strong><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></strong></li>
   </ul>
-  <ul>
-    <li><a href="#" class="secondary">Services</a></li>
-    {% include cat_lists.md %}
-  </ul>
+  {% include menu_links.md %}
 </nav>
 
 
@@ -38,8 +35,8 @@
     <li><strong>Acme Corp</strong></li>
   </ul>
   <ul>
-    <li><a href="#" class="secondary">Services</a></li>
-    <li><a href="#" class="secondary">Products</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Products</a></li>
     <li>
       <details class="dropdown">
         <summary>
@@ -61,8 +58,10 @@ FM vars:
 `title`
 `category`
 `permalink`
+`order`
 
 page.dir:
 `permalink`
 The path between the source directory and the file of the post or page, e.g. /pages/. This can be overridden by permalink in the front matter.
 
+`order` goes through submenus — categories which contain files with lowest sort numbers will be displayed first

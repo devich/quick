@@ -58,7 +58,14 @@
 
   <body>
     <!-- Header section -->
-    <header>&nbsp;</header>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><strong><a class="contrast nav_title" href="{{ "/" | absolute_url }}">{{ site.title }}</a></strong></li>
+        </ul>
+        {% include menu_links.md %}
+      </nav>
+    </header>
     <!-- Main section -->
     <main class="container">
       <!-- README.md starts from here -->

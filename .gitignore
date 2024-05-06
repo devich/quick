@@ -2,3 +2,4 @@ _site
 .jekyll-cache
 Gemfile
 Gemfile.lock
+test.md
