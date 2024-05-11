@@ -1,3 +1,10 @@
+<style>
+html[data-theme="dark"] {
+  background: var(--pico-background-color);
+  background: linear-gradient(175deg, rgba(18,18,18,1) 0%, color-mix(in srgb, var(--pico-primary), transparent 90%) 7%, rgba(18,18,18,1) 27%, rgba(18,18,18,1) 86%, rgba(8,8,8,1) 100%);
+}
+</style>
+
 # <span style="color: #ff201e">Quick.</span> The fastest and easiest way to&nbsp;create a&nbsp;GitHub Pages website for your project.
 #### The Quick theme magically transforms your `README.md` into a GitHub Pages site, applying clean and visually appealing styles.
 
@@ -21,7 +28,7 @@ remote_theme: devich/quick@0.0.1
 
 No problem! You’re not restricted to using `readme.md` as the index page of your site. Simply create a file named `index.md`, and this theme will use it as the home page. Feel free to create as many pages as you want and link them within your site.
 
-For instance, if you need a home page and an ‘About’ page, create files named `index.md` and `about.md`. Inside the `index.md` file, you can link to your ‘About’ page like this:
+For instance, if you need a home page and an _“About”_ page, create files named `index.md` and `about.md`. Inside the `index.md` file, you can link to your _“About”_ page like this:
 
 ```md
 [About this project](/about)
@@ -68,6 +75,23 @@ If there’s a block in the `README.md` file that you don’t want to display on
 
 If you need to use your own CSS styles, create a file `assets/css/custom.css` in your repository and add your styles to it.
 
+Alternatively, you can add your styles directly in the `.md` file within the `<style></style>` tag pair.
+
 For a custom favicon, just place your file in `PNG` format at `assets/img/favicon.png`.
 
 For full control, clone this repository and modify the template as you need.
+
+## Automatic navigation menu
+### Enable the navigation menu
+Quick can automatically generate a navigation menu in the header of your site. By default, the menu is **not** generated. To enable the automatic generation of the menu, add the `nav_menu` variable to the `_config.yml` file with one of these values: `true`, `sticky`, or `autohide`.
+
+- `nav_menu: true` — the menu is located at the top of the page;
+- `nav_menu: sticky` — the menu sticks to the top edge of the page;
+- `nav_menu: autohide` — the menu hides when scrolling the page.
+
+Each `.md` file in the repository, with the exception of `index.md` and `readme.md`, is treated as a site's page. A menu item will be automatically created for each of these pages, using the filename as the menu item’s name. For instance, if you create a file named `about.md`, a menu item titled _“About”_ will be generated.
+
+### Dropdowns in the menu
+When you put `.md` files into a folder, the folder’s name will appear as a dropdown menu on your site. The files within this folder will be listed as sub-items under this dropdown menu.
+
+For instance, if you make a folder called `my projects` and add the files `portfolio.md` and `jekyll theme.md` to it, a dropdown menu titled _“My projects”_ will be created. This dropdown will have two sub-items: _“Portfolio”_ and _“Jekyll theme”_.

@@ -1,10 +1,43 @@
-h1 {
-  font-size: 4rem;
+h1, .nav_title {
   font-family: "Roboto Slab", var(--pico-font-family);
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   /* hyphens: auto; */
+}
+h1 {
+  font-size: 4rem;
+}
+.nav_title {
+  font-size: 1.5rem;
+}
+a[aria-current="page"] {
+  font-weight: 500;
+}
+body > header.sticky {
+  position: sticky;
+}
+body > header {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 0;
+  margin-bottom: 2rem;
+  box-shadow: var(--pico-card-box-shadow);
+  z-index: 2;
+  top: 0;
+  transition: border-top-color .4s ease-in-out, box-shadow .4s ease-in-out;
+  -webkit-backdrop-filter: blur(1rem) brightness(1.5);
+  backdrop-filter: blur(1rem) brightness(1.5);
+  transition: top 0.5s ease-in-out;
+}
+html[data-theme="dark"] body > header {
+  background-color: #131e27a1;
+  border-bottom: 1px solid #2f2f2f;
+  -webkit-backdrop-filter: blur(1rem) brightness(0.7);
+  backdrop-filter: blur(1rem) brightness(0.7);
+}
+.nav_summary {
+  border-color: rgb(from var(--pico-border-color) r g b / 50%);
+
 }
 pre {
   margin-top: calc(var(--pico-spacing) / 2);
@@ -16,9 +49,24 @@ pre {
   h1 {
     font-size: 2.5rem;
   }
+  .nav_title {
+    font-size: 1.2rem;
+  }
+  body > header > nav {
+    font-size: 0.9rem;
+  }
+  nav details.dropdown summary:not([role]) {
+    height: calc(0.8rem* var(--pico-line-height) + var(--pico-nav-link-spacing-vertical)* 2);
+  }
 }
 @media screen and (max-width: 360px) {
   h1 {
     font-size: 2rem;
+  }
+  body > header > nav {
+    font-size: 0.8rem;
+  }
+  nav details.dropdown summary:not([role]) {
+    height: calc(0.8rem* var(--pico-line-height) + var(--pico-nav-link-spacing-vertical)* 2);
   }
 }

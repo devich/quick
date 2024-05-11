@@ -58,22 +58,30 @@
 
   <body>
     <!-- Header section -->
-    <header class="container">
-      <nav>
+    <header {% if site.nav_menu == "sticky" or site.nav_menu == "autohide" %}class="sticky"{% endif %}>
+    {% if site.nav_menu == true or site.nav_menu == "sticky" or site.nav_menu == "autohide" %}
+      <nav class="container">
         <ul>
           <li><strong><a class="contrast nav_title" href="{{ "/" | absolute_url }}">{{ site.title }}</a></strong></li>
         </ul>
         {% include menu_links.md %}
       </nav>
+    {% endif %}
     </header>
+    
     <!-- Main section -->
     <main class="container">
       <!-- README.md starts from here -->
       {{ content }}
       <!-- README.md ends here -->
     </main>
+    
     <!-- Footer section -->
     <footer>&nbsp;</footer>
+    
     <!-- Custom Js placeholder -->
+    {% if site.nav_menu == "autohide" %}
+      <script type="text/javascript" src="{{ "/assets/js/hidenav.js" | relative_url }}"></script>
+    {% endif %}
   </body>
 </html>
